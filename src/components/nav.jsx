@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/tesla-logo-hero.png";
+import "../styles/nav.css";
 const nav = () => {
   return (
     <div className="Navbar flex w-screen justify-between text-center items-center px-16 py-5">

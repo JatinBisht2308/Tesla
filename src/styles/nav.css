@@ -1,0 +1,3 @@
+ .Navbar > div > * {
+        @apply cursor-pointer;
+}
