@@ -7,7 +7,6 @@ import logoWhite from "../assets/logo-white.png";
 import "../styles/nav.css";
 const Nav = () => {
    const [logo, setLogo] = useState(logoDark);
-  //  const [textColor, setTextColor] = useState("text-black");
   const toggleMenuSidebar= () => {
     const sidebar = document.querySelector(".Sidebar");
     sidebar.classList.toggle("translate-x-full");
@@ -24,15 +23,14 @@ const Nav = () => {
       setLogo(logoDark);
       document.querySelector(".Navbar").classList.remove("text-white");
       document.querySelector(".Navbar").classList.add("text-black");
-      // setTextColor("text-black");
     }
   },[location.pathname])
   
   return (
-    <div className="Navbar flex w-screen justify-between text-center items-center px-16 py-5">
+    <div className="Navbar flex w-screen justify-between text-center items-center px-6 py-4">
       <Link to={"/"}>
-        <div className="nav-left">
-          <img src={logo} alt="Tesla Logo" className="mr-9" />
+        <div className="nav-left mr-28 ml-5">
+          <img src={logo} alt="Tesla Logo"  />
         </div>
       </Link>
 
@@ -83,7 +81,7 @@ const Nav = () => {
           <li className="mr-3 px-4 py-1 font-semibold text-sm duration-500 hover:backdrop-sepia-0  hover:bg-black/10 rounded-sm">
             Account
           </li>
-          <li className="mr px-4 py-1 font-semibold text-sm  duration-500 hover:backdrop-sepia-0 hover:bg-black/10 rounded-sm" 
+          <li className="px-4 py-1 font-semibold text-sm  duration-500 hover:backdrop-sepia-0 hover:bg-black/10 rounded-sm" 
           onClick={toggleMenuSidebar}
           >
             Menu
