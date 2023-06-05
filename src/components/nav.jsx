@@ -1,15 +1,33 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
 import logoDark from "../assets/logo-dark.png"
 import logoWhite from "../assets/logo-white.png";
 import "../styles/nav.css";
 const Nav = () => {
    const [logo, setLogo] = useState(logoDark);
-  const toggleMenuSidebar= () =>{
+  //  const [textColor, setTextColor] = useState("text-black");
+  const toggleMenuSidebar= () => {
     const sidebar = document.querySelector(".Sidebar");
     sidebar.classList.toggle("translate-x-full");
   }
+  const location = useLocation();
+  useEffect(() => {
+    if(location.pathname === "/model3" || location.pathname === "/modelY" || location.pathname === "/solarRoof" || location.pathname === "/powerWall"){
+      setLogo(logoWhite);
+      // setTextColor("text-white");
+      document.querySelector(".Navbar").classList.remove("text-black");
+      document.querySelector(".Navbar").classList.add("text-white");
+    }
+    else{
+      setLogo(logoDark);
+      document.querySelector(".Navbar").classList.remove("text-white");
+      document.querySelector(".Navbar").classList.add("text-black");
+      // setTextColor("text-black");
+    }
+  },[location.pathname])
+  
   return (
     <div className="Navbar flex w-screen justify-between text-center items-center px-16 py-5">
       <Link to={"/"}>
