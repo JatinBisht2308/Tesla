@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../components/nav";
+import Navbar from "../components/Nav";
 import "../styles/solarPanel.css";
 const SolarPanels = () => {
   return (

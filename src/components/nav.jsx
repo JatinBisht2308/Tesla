@@ -1,17 +1,20 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/tesla-logo-hero.png";
+import logoDark from "../assets/logo-dark.png"
+import logoWhite from "../assets/logo-white.png";
 import "../styles/nav.css";
-const nav = () => {
+const Nav = () => {
+   const [logo, setLogo] = useState(logoDark);
   const toggleMenuSidebar= () =>{
     const sidebar = document.querySelector(".Sidebar");
-    sidebar.classList.toggle("-translate-x-full");
+    sidebar.classList.toggle("translate-x-full");
   }
   return (
     <div className="Navbar flex w-screen justify-between text-center items-center px-16 py-5">
       <Link to={"/"}>
         <div className="nav-left">
-          <img src={Logo} alt="Tesla Logo" className="mr-9" />
+          <img src={logo} alt="Tesla Logo" className="mr-9" />
         </div>
       </Link>
 
@@ -73,4 +76,4 @@ const nav = () => {
   );
 };
 
-export default nav;
+export default Nav;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../components/nav";
+import Navbar from "../components/Nav";
 import "../styles/powerWall.css";
 const PowerWall = () => {
   return (
