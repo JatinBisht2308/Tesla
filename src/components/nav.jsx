@@ -27,7 +27,7 @@ const Nav = () => {
   },[location.pathname])
   
   return (
-    <div className="Navbar flex w-screen justify-between text-center items-center px-6 py-4">
+    <div className="Navbar fixed flex w-screen justify-between text-center items-center px-6 py-4">
       <Link to={"/"}>
         <div className="nav-left mr-28 ml-5">
           <img src={logo} alt="Tesla Logo"  />

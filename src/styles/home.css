@@ -1,4 +1,4 @@
-.Home {
+.roadster {
   background-image: url("../assets/Roadster/hero.jpg");
 }
 .heading > h1{
@@ -20,4 +20,7 @@
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
+}
+.content{
+  height: 90vh;
 }
