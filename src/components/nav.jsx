@@ -9,7 +9,13 @@ const Nav = () => {
    const [logo, setLogo] = useState(logoDark);
   const toggleMenuSidebar= () => {
     const sidebar = document.querySelector(".Sidebar");
-    sidebar.classList.toggle("translate-x-full");
+    const closeBtn = document.querySelector(".close-sidebar");
+    const sidebarOverlay = document.querySelector(".sidebar-overlay");
+    const body = document.querySelector("body");
+    sidebarOverlay.classList.add("active");
+    sidebar.classList.add("active");
+    closeBtn.classList.toggle("fixed");
+    body.classList.add("stop-scroll");
   }
   const location = useLocation();
   useEffect(() => {

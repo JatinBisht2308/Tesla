@@ -1,0 +1,28 @@
+.Sidebar.active{
+    right: 0;
+}
+.Sidebar{
+    right: -100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+.close-sidebar {
+    transition: 0.5s;
+}
+.sidebar-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 320px);
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.sidebar-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}

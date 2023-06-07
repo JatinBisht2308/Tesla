@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/sidebar.css"
 const sidebar = () => {
   const menuItems = [
     "Existing Inventory",
@@ -21,11 +22,17 @@ const sidebar = () => {
   ];
   const closeSidebar = () => {
     const sidebar = document.querySelector(".Sidebar");
-    sidebar.classList.toggle("translate-x-full");
+    const closeBtn = document.querySelector(".close-sidebar");
+    const sidebarOverlay = document.querySelector(".sidebar-overlay");
+    const body = document.querySelector("body");
+    sidebar.classList.remove("active");
+    closeBtn.classList.toggle("fixed");
+    sidebarOverlay.classList.remove("active");
+    body.classList.remove("stop-scroll");
   };
   return (
-    <div className="Sidebar w-80 h-screen absolute bg-white top-0 right-0 translate-x-full transition ease-in-out delay-300 px-8 py-5 overflow-y-auto">
-      <div className="close-sidebar mb-6 fixed right-8">
+    <div className="Sidebar overflow-auto bg-white w-80 h-screen px-8 py-5">
+      <div className="close-sidebar mb-6 right-8">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -73,6 +80,8 @@ const sidebar = () => {
           <p>United States</p>
           <p>English</p>
         </div>
+      </div>
+      <div className="sidebar-overlay">
       </div>
     </div>
   );
