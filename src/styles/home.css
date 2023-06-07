@@ -7,6 +7,9 @@
 .model3{
   background-image: url("../assets/Model-3-Main-Hero-Desktop-LHD.jpg");
 }
+.modelY{
+  background-image: url("../assets/Homepage-Model-Y-Global-Desktop.avif");
+}
 .heading > h1{
   font-size: 42px;
   font-weight: 900;
