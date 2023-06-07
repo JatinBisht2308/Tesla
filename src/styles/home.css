@@ -1,6 +1,9 @@
 .Roadster {
   background-image: url("../assets/Roadster/hero.jpg");
 }
+.modelS{
+  background-image: url("../assets/Model-S-homepage-desktop.avif");
+}
 .heading > h1{
   font-size: 42px;
   font-weight: 900;
@@ -27,4 +30,9 @@
 .order-btn > button{
   background-color: rgba(23, 26, 32, 0.8);
   backdrop-filter: blur(8px);
+}
+.demo-btn > button{
+  background-color: rgba(244, 244, 244, 0.65);
+  backdrop-filter: blur(8px);
+  color: black;
 }

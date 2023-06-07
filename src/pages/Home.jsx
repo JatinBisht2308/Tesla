@@ -10,7 +10,7 @@ const Home = () => {
        <Navbar />
         <Sidebar />
         <RoadsterHome />
-        <ModelsHome name="Model S" lease="Lease from $429/mo" secondBtn="Demo Drive"/>
+        <ModelsHome name="Model S" lease="Lease from $429/mo" secondBtn="Demo Drive" class="modelS" />
     </div>
   );
 };
