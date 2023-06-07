@@ -1,4 +1,4 @@
-.roadster {
+.Roadster {
   background-image: url("../assets/Roadster/hero.jpg");
 }
 .heading > h1{
@@ -23,4 +23,8 @@
 }
 .content{
   height: 90vh;
+}
+.order-btn > button{
+  background-color: rgba(23, 26, 32, 0.8);
+  backdrop-filter: blur(8px);
 }
