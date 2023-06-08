@@ -13,6 +13,9 @@
 .modelX{
   background-image: url("../assets/Homepage-Model-X-Desktop-LHD.avif");
 }
+.solarPanels{
+  background-image: url("../assets/425_Hero_D_001.jpg");
+}
 .heading > h1{
   font-size: 42px;
   font-weight: 900;
