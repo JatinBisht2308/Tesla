@@ -15,7 +15,7 @@ const Home = () => {
         <ModelsHome name="Model S" lease="Lease from $429/mo" secondBtn="Demo Drive" class="modelS" />
         <ModelsHome name="Model X" lease="View Inventory" secondBtn="Demo Drive" class="modelX" />
         <ModelsHome name="Solar Panels" lease="Schedule a Virtual Consultation" secondBtn="Learn More" class="solarPanels" />
-        <ModelsHome name="Model S" lease="Lease from $429/mo" secondBtn="Demo Drive" class="modelS" />
+        <ModelsHome name="Solar Roof" lease="Produce Clean Energy From Your Roof" secondBtn="Learn More" class="solarRoof" />
     </div>
   );
 };
