@@ -19,6 +19,9 @@
 .solarRoof{
   background-image: url("../assets/Homepage-SolarRoof-Desktop-Global.avif");
 }
+.accessories{
+  background-image: url("../assets/Desktop_Accessories.avif");
+}
 .heading > h1{
   font-size: 42px;
   font-weight: 900;

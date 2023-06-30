@@ -13,3 +13,6 @@ body::-webkit-scrollbar {
 .stop-scroll{
     overflow: hidden;
 }
+html {
+    scroll-behavior: smooth;
+  }
